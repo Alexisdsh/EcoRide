@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>EcoRide</title>
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+    <header class="header">
+
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#">COVOITURAGE</a></li>
+                <li><a href="../connexion/connexion.html">CONNEXION</a></li>
+                <li><a href="../contact/contact.html">CONTACT</a></li>
+                <li><a class="active" href="../accueil/page.html">ACCUEIL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section class="presentation">
+    <div class="container presentation-grid">
+      <div class="presentation-text">
+        <h1>Covoiturage écoresponsable</h1>
+        <p>Réduisez votre impact écologique en partageant vos trajets en voiture, où que vous alliez, trouvez le trajet idéal parmi notre large choix de destinations à petits prix.</p>
+      </div>
+      <div class="presentation-image">
+        <img src="image/voiture.png" class="ecovoiture">
+      </div>
+    </div>
+  </section>
+
+  <section class="search-box">
+    <div class="container">
+      <h2>Où allez-vous ?</h2>
+      <form>
+        <input type="text" placeholder="Départ">
+        <input type="text" placeholder="Destination">
+        <input type="date">
+        <div class="passager-nombre">
+            <label>Passagers :</label>
+            <button type="button" class="btn-minus">–</button>
+            <span id="passager-nombre">1</span>
+            <button type="button" class="btn-plus">+</button>
+            <input type="hidden" name="passagers" id="passager-input" value="1">
+        </div>
+        <button type="submit">Rechercher</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>À propos d’EcoRide</h2>
+      <p>
+        EcoRide est une plateforme de covoiturage dédiée à la réduction de l’empreinte carbone
+        en facilitant le partage de trajets entre particuliers. Nous encourageons l’utilisation de
+        véhicules électriques pour un avenir plus vert.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 EcoRide</p>
+      <a href="#">Mentions légales</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
