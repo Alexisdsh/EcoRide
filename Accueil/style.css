@@ -16,24 +16,42 @@ body {
   margin: auto;
 }
 
+
+/*HEADER*/
 .logo {
   display: flex;
   width: 100px;
   height: 100px;
   margin-left: -80px;
   margin-bottom: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+header {
+  margin-top: 70px;
 }
 
 nav {
   display: flex;
-  height: 50px;
+  height: 60px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px 100px 100px;
+  padding: 0 50px 105px 100px;
   flex-wrap: wrap;
   border-bottom: 1px solid #dadada;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
 }
+
 
 nav ul {
   display: flex;
@@ -41,9 +59,11 @@ nav ul {
   list-style: none;
   padding-bottom: 30px;
 }
+
 nav ul li {
   margin: 0 5px;
 }
+
 nav ul li a {
   color: #333333;
   text-decoration: none;
@@ -54,11 +74,13 @@ nav ul li a {
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
+
 nav ul li a.active,
 nav ul li a:hover {
   color: #333333;
   background: #A5D6A7;
 }
+
 nav .menu-btn i {
   color: #333333;
   font-size: 22px;
@@ -70,10 +92,10 @@ input[type='checkbox'] {
   display: none;
 }
 
-/*PRESENTATION ENTREPRISE*/
 
+/*PRESENTATION ENTREPRISE*/
 .presentation {
-  background-color: #e7f4e7; /* vert très clair */
+  background-color: #e7f4e7;
   padding: 60px 0;
 }
 
@@ -90,7 +112,7 @@ input[type='checkbox'] {
 
 .presentation-text h1 {
   font-size: 36px;
-  color: #2e7d32; /* vert forêt */
+  color: #2e7d32;
   margin-bottom: 10px;
 }
 
@@ -108,12 +130,13 @@ input[type='checkbox'] {
   height: auto;
 }
 
+/*DESTINATION*/
 .search-box {
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
   margin-top: -40px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .search-box h2 {
@@ -135,8 +158,23 @@ input[type='checkbox'] {
   font-size: 16px;
 }
 
+.search-box button {
+  background-color: #A5D6A7;
+  color: 333333;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s;
+}
+
+.search-box button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #A5D6A7;
+  background: #2e7d32;
+}
+
 .passager-nombre {
-  position: relative; /* permet à l’icône d’être bien placée */
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -183,6 +221,9 @@ input[type='checkbox'] {
   font-weight: bold;
 }
 
+.passager-nombre .input-icon {
+  padding-left: 36px;
+}
 
 .input-icon {
   position: relative;
@@ -203,34 +244,7 @@ input[type='checkbox'] {
   pointer-events: none;
 }
 
-
-.passager-nombre .passager-label {
-   margin-right: 8px;
-}
-
-.passager-nombre .input-icon {
-  padding-left: 36px;
-}
-
-
-
-
-
-.search-box button {
-  background-color: #A5D6A7;
-  color: 333333;
-  cursor: pointer;
-  border: none;
-  transition: 0.4s;
-}
-
-.search-box button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  color: #A5D6A7;
-  background: #2e7d32;
-}
-
+/*A propos*/
 .about {
   background-color: #A5D6A7;
   padding: 40px 0;
@@ -241,6 +255,8 @@ input[type='checkbox'] {
   margin-bottom: 10px;
 }
 
+
+/*Footer*/
 footer {
   padding: 20px 0;
   background-color: #fff;
