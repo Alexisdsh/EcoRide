@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>EcoRide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>EcoRide</title>
 </head>
 
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
-    <header class="header">
+  <header class="header">
 
-        <nav>
-            <img src="image/logo.png" class="logo">
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="#">COVOITURAGE</a></li>
-                <li><a href="../connexion/connexion.html">CONNEXION</a></li>
-                <li><a href="../contact/contact.html">CONTACT</a></li>
-                <li><a class="active" href="../accueil/page.html">ACCUEIL</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+      <img src="image/logo.png" class="logo">
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../covoiturage/covoiturage.html">COVOITURAGE</a></li>
+        <li><a href="../connexion/connexion.html">CONNEXION</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
+        <li><a class="active" href="../accueil/index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section class="presentation">
     <div class="container presentation-grid">
       <div class="presentation-text">
         <h1>Covoiturage écoresponsable</h1>
-        <p>Réduisez votre impact écologique en partageant vos trajets en voiture, où que vous alliez, trouvez le trajet idéal parmi notre large choix de destinations à petits prix.</p>
+        <p>Réduisez votre impact écologique en partageant vos trajets en voiture, où que vous alliez, trouvez le trajet
+          idéal parmi notre large choix de destinations à petits prix.</p>
       </div>
       <div class="presentation-image">
         <img src="image/voiture.png" class="ecovoiture">
@@ -42,20 +46,39 @@
     <div class="container">
       <h2>Où allez-vous ?</h2>
       <form>
-        <input type="text" placeholder="Départ">
-        <input type="text" placeholder="Destination">
-        <input type="date">
-        <div class="passager-nombre">
-            <label>Passagers :</label>
-            <button type="button" class="btn-minus">–</button>
-            <span id="passager-nombre">1</span>
-            <button type="button" class="btn-plus">+</button>
-            <input type="hidden" name="passagers" id="passager-input" value="1">
+
+        <div class="input-icon">
+          <i class="fa-solid fa-location-dot icon"></i>
+          <input type="text" placeholder="Départ">
         </div>
+
+        <div class="input-icon">
+          <i class="fa-solid fa-location-crosshairs icon"></i>
+          <input type="text" placeholder="Destination">
+        </div>
+
+        <div class="input-icon">
+          <i class="fa-solid fa-calendar-days icon"></i>
+          <input type="text" placeholder="jj/mm/aaaa" id="date-custom">
+        </div>
+
+
+        <div class="passager-nombre">
+          <i class="fa-solid fa-user icon"></i>
+          <span class="passager-label">Passagers :</span>
+          <button type="button" class="btn-minus">–</button>
+          <span id="passager-nombre">1</span>
+          <button type="button" class="btn-plus">+</button>
+          <input type="hidden" name="passagers" id="passager-input" value="1">
+        </div>
+
+
         <button type="submit">Rechercher</button>
+
       </form>
     </div>
   </section>
+
 
   <section class="about">
     <div class="container">
@@ -74,6 +97,8 @@
       <a href="#">Mentions légales</a>
     </div>
   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

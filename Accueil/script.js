@@ -25,3 +25,13 @@
     countSpan.textContent = count;
     hiddenInput.value = count;
   }
+
+
+//date 
+flatpickr("#date-custom", {
+  dateFormat: "d/m/Y",
+  altInput: true,
+  altFormat: "j F Y",
+  locale: 'fr'
+});
+
