@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Contactez-nous !</title>
+
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+
+  <header class="header">
+
+    <nav>
+      <a href="../accueil/index.html">
+      <img src="image/logo.png" class="logo">
+      </a>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../covoiturage/covoiturage.html">COVOITURAGE</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
+        <li><a class="active" href="../connexion/connexion.html">CONNEXION</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <content class="content">
+    <section id="contact">
+      <h1 class="section-header">Contact</h1>
+      <div class="contact-wrapper">
+
+        <form id="contact-form" class="form-horizontal" role="form">
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="Nom et Prenom" name="name" value=""
+                required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="" required>
+            </div>
+          </div>
+
+          <textarea class="form-control" rows="10" placeholder="Message" name="message" required></textarea>
+
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
+            </div>
+
+          </button>
+
+        </form>
+
+        <div class="direct-contact-container">
+
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="#"
+                    title="adresse">21 rue eco 21000 Dijon - France</a></span></i></li>
+
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="#"
+                    title="Give me a call">06 01 10 01 10</a></span></i></li>
+
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mail:#"
+                    title="Send me an email">ecoride@ex.com</a></span></i></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </content>
+
+
+
+    <footer>
+    <div class="container">
+      <p>© 2024 EcoRide</p>
+      <a href="#">Mentions légales</a>
+    </div>
+  </footer>
+</body>
+
+</html>
