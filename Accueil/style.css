@@ -92,56 +92,20 @@ input[type='checkbox'] {
   display: none;
 }
 
-
-/*PRESENTATION ENTREPRISE*/
-.presentation {
-  background-color: #e7f4e7;
-  padding: 60px 0;
-}
-
-.presentation-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.presentation-text {
-  max-width: 50%;
-}
-
-.presentation-text h1 {
-  font-size: 36px;
-  color: #2e7d32;
-  margin-bottom: 10px;
-}
-
-.presentation-text p {
-  font-size: 18px;
-  color: #333;
-}
-
-.presentation-image {
-  max-width: 45%;
-}
-
-.presentation-image img.ecovoiture {
-  max-width: 100%;
-  height: auto;
-}
-
 /*DESTINATION*/
 .search-box {
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
-  margin-top: -40px;
+  margin-top: 140px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .search-box h2 {
   color: #2e7d32;
   margin-bottom: 15px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .search-box form {
@@ -243,6 +207,99 @@ input[type='checkbox'] {
   color: #2e7d32;
   pointer-events: none;
 }
+
+
+/*PRESENTATION ENTREPRISE*/
+.presentation {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.presentation-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.presentation-text {
+  max-width: 50%;
+}
+
+.presentation-text h1 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.presentation-text p {
+  font-size: 18px;
+  color: #333;
+}
+
+.presentation-image {
+  max-width: 45%;
+}
+
+.presentation-image img.ecovoiture {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Pourquoi Ecoride*/
+
+.advantages {
+  background-color: #eaf5ec;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantage-item {
+  flex: 1 1 220px;
+  max-width: 260px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.advantage-item:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-item i {
+  font-size: 40px;
+  color: #388e3c;
+  margin-bottom: 15px;
+}
+
+.advantage-item h3 {
+  font-size: 18px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.advantage-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+
 
 /*A propos*/
 .about {

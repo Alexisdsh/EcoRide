@@ -104,7 +104,7 @@ input[type='checkbox'] {
 
 #contact {
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 170px);
   padding-top: 30px;
   background-color: #A5D6A7;
 }
@@ -115,7 +115,7 @@ input[type='checkbox'] {
   margin: 40px;
   padding: 60px 0;
   font: 300 50px 'Oswald', sans-serif;
-  color: #2e7d32;
+  color: #333333;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -139,20 +139,20 @@ input[type='checkbox'] {
 .form-control,
 textarea {
   max-width: 400px;
-  background: transparent;
   color: #A5D6A7;
   letter-spacing: 1px;
-  border-color: #2e7d32;
+  border-color: #333333;
   border-radius: 12px;
   margin: 10px;
   padding: 7px 200px 7px 7px;
-  border-style: double; 
+  border-style: hidden; 
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
 
 .send-button {
   margin-top: 15px;
-  height: 34px;
-  width: 400px;
+  height: 33px;
+  width: 410px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   border-radius: 1rem;
@@ -198,7 +198,7 @@ textarea {
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1px;
-  color: #2e7d32;
+  color: #333333;
 }
 
 .place {
@@ -217,13 +217,13 @@ textarea {
 }
 
 .contact-text a {
-  color: #2e7d32;
+  color: #333333;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: #333;
+  color: #2e7d32;
   text-decoration: none;
 }
 
