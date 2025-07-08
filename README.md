@@ -32,6 +32,7 @@ $ php -S localhost:8000 -t public/
   - Email : admin@demo.fr / Mot de passe : Admin2024!
 
 ## Liens utiles
+- GitHub : https://github.com/Alexisdsh/EcoRide.git
 - Application déployée : ??
 - Trello gestion projet : https://trello.com/invite/b/6866a6c41e016673b1fd36bc/ATTI504b3a4664a9d89fecb82e1c124b7bf211408AD5/studi
 ```

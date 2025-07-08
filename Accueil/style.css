@@ -124,7 +124,7 @@ input[type='checkbox'] {
 
 .search-box button {
   background-color: #A5D6A7;
-  color: 333333;
+  color: #333333;
   cursor: pointer;
   border: none;
   transition: 0.4s;
@@ -324,4 +324,16 @@ footer {
 footer a {
   color: #2e7d32;
   text-decoration: none;
+}
+
+.ml{
+  color: #333;
+}
+
+.barre{
+  border: none;
+  height: 1px;
+  background-color: #2e7d32;
+  width: 15%;              
+  margin: 10px auto;        
 }
