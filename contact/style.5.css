@@ -235,10 +235,21 @@ footer {
   background-color: #fff;
   border-top: 1px solid #dadada;
   text-align: center;
-  top: 80px;
 }
 
 footer a {
   color: #2e7d32;
   text-decoration: none;
+}
+
+.ml{
+  color: #333;
+}
+
+.barre{
+  border: none;
+  height: 1px;
+  background-color: #2e7d32;
+  width: 15%;              
+  margin: 10px auto;        
 }
