@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Se connecter</title>
+  <link rel="stylesheet" href="style.4.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+  <header class="header">
+
+    <nav>
+      <a href="../accueil/index.html">
+        <img src="image/logo.png" class="logo">
+      </a>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../covoiturage/covoiturage.html">COVOITURAGE</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
+        <li><a class="active" href="../connexion/connexion.html">CONNEXION</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="auth-section">
+    <div class="auth-container">
+      <div class="auth-tabs">
+        <button class="tab active" onclick="showForm('login')">Connexion</button>
+        <button class="tab" onclick="showForm('register')">Inscription</button>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <h2>Connexion</h2>
+        <input type="email" placeholder="Adresse e-mail" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <a class="mdp" href="../connexion/mdp/mdpoublie.html">Mot de passe oublié</a>
+        <button type="submit">Se connecter</button>
+      </form>
+
+      <form id="register-form" class="auth-form hidden">
+        <h2>Inscription</h2>
+        <input type="text" placeholder="Prénom" required>
+        <input type="text2" placeholder="Nom" required>
+        <input type="email" placeholder="Adresse e-mail" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <a href="mailto:contact@ecoride.fr">contact@ecoride.fr</a>
+      <hr class="barre">
+      <a class="ml" href="#">Mentions légales</a><br>
+    </div>
+  </footer>
+
+  <script src="script.4.js"></script>
+</body>
+
+</html>
