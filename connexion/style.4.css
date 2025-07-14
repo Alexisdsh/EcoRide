@@ -199,6 +199,23 @@ input[type='checkbox'] {
    text-decoration: none;
 }
 
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 40px; /* espace pour l’icône */
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
 
 /*/ ////////////////////////////////////*/
 /*Footer*/
